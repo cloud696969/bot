@@ -59,7 +59,7 @@ const options = {
   }
 };
 
-async function getTopUSDTMFutures24H(mode) {
+async function getTopUSDTMFutures24H() {
   try {
     const response = await fetch(ENDPOINT + '?contractType=PERPETUAL', options);
     if (response.ok) {
