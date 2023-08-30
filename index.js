@@ -84,7 +84,7 @@ async function getTopUSDTMFutures24H() {
         }
       }
       pairs = pairs.filter((pair) => !blacklist.includes(pair.symbolName));
-      pairs = pairs.filter((pair) => pair.changePercent > 2.8 && pair.changePercent < 6.7);
+      pairs = pairs.filter((pair) => pair.changePercent > 3.5 && pair.changePercent < 6.7);
 
       const topPositive = pairs
         .sort((a, b) => b.changePercent - a.changePercent)
